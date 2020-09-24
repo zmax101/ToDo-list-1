@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div id="app">
+    <div id="app" class="main">
         <div class="stats">
             <h3 class="stats__title"> {{"Задачи: " + tasks.length}} </h3>
             <task @task_done="delete_task(index)" :data="data" v-for="(data, index) in tasks" :key="index"></task>
