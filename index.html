@@ -13,7 +13,8 @@
     <div id="app" class="main">
         <div class="stats">
             <h3 class="stats__title"> {{"Задачи: " + tasks.length}} </h3>
-            <task @task_done="delete_task(index)" :data="data" v-for="(data, index) in tasks" :key="index"></task>
+            <task @task_done="delete_task(index)" :data="data" v-for="(data, index) in tasks" :key="index"
+            @task_comp="color_task"></task>
         </div>
         <div class="add_task">
             <div class="add_task__input">

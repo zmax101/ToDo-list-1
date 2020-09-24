@@ -3,6 +3,9 @@ Vue.component('task', {
     methods: {
         task_done() {
             this.$emit('task_done');
+        },
+        task_comp() {
+            this.$emit('task_comp');
         }
     },
     template: `
@@ -11,9 +14,14 @@ Vue.component('task', {
                 <h3 class="task__title">{{data.title}}</h3>
                 <p class="task__desc">{{data.desc}}</p>
             </div>
-            <button @click='task_done()' class="task__done">
-                <i class="far fa-trash-alt"></i>
-            </button>
+            <div>
+                <button @click='task_comp()' class="task__comp">
+                    <i class="far fa-check-square"></i>
+                </button>
+                <button @click='task_done()' class="task__done">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </div>
         </div>
     `
 })
@@ -28,15 +36,21 @@ let vue = new Vue({
         tasks: [
             {
                 title: 'Купить хлеб',
-                desc: '(пример задачи)'
+                desc: '(пример задачи)',
+                active: false
             },
             {
                 title: 'Купить мазик',
-                desc: '(пример задачи)'
+                desc: '(пример задачи)',
+                active: false
             }
-        ]
+        ],
     },
     methods: {
+        color_task: function () {
+            let elements = document.getElementsByClassName("task");
+            // НАДО СДЕЛАТЬ СМЕНУ ФОНА!!!!!!
+        },
         delete_task(id) {
             this.tasks.splice(id, 1);
         },

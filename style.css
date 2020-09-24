@@ -11,7 +11,7 @@
 }
 
 .main {
-    width: 320px;
+    width: 600px;
     box-shadow: 0 3px 20px #00000023;
     font-family: 'Gilroy', sans-serif;
     padding: 10px;
@@ -53,6 +53,21 @@
 .task__desc {
     font-weight: 500;
     font-size: 16px;
+}
+
+.task__comp {
+    height: 40px;
+    width: 40px !important;
+    border: none;
+    background-color: #03a834a6;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.task__comp:hover {
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #00ff4ca6;
 }
 
 .task__done {
@@ -107,4 +122,10 @@ textarea {
     cursor: pointer;
     border-radius: 4px;
     background-color: #00ff4ca6;
+}
+.active {
+    background: #00ff4ca6;
+}
+.active:hover {
+    background-color: #03a834a6;
 }
