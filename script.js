@@ -12,7 +12,7 @@ Vue.component('task', {
                 <p class="task__desc">{{data.desc}}</p>
             </div>
             <button @click='task_done()' class="task__done">
-                <i class="far fa-check-square"></i>
+                <i class="far fa-trash-alt"></i>
             </button>
         </div>
     `
@@ -27,12 +27,12 @@ let vue = new Vue({
         },
         tasks: [
             {
-                title: 'Заголовок',
-                desc: 'Описание'
+                title: 'Купить хлеб',
+                desc: '(пример задачи)'
             },
             {
-                title: 'Заголовок 2',
-                desc: 'Описание 2'
+                title: 'Купить мазик',
+                desc: '(пример задачи)'
             }
         ]
     },
@@ -49,6 +49,6 @@ let vue = new Vue({
                 this.new_task.title = '';
                 this.new_task.desc = '';
             }
-        }
+        },
     }
 })

@@ -56,16 +56,18 @@
 }
 
 .task__done {
-    height: 30px;
-    width: 30px !important;
+    height: 40px;
+    width: 40px !important;
     border: none;
-    background-color: unset;
+    background-color: #ff0000;
+    font-size: 25px;
+    border-radius: 5px;
 }
 
 .task__done:hover {
     cursor: pointer;
     border-radius: 4px;
-    background-color: #9ee493bb;
+    background-color: #bd0f0f;
 }
 
 .add_task {
@@ -97,11 +99,12 @@ textarea {
     border: none;
     margin-left: 20px;
     background-color: unset;
-    font-size: 30px;
+    font-size: 40px;
+    background-color: #03a834a6;
 }
 
 .add_task__btn:hover {
     cursor: pointer;
     border-radius: 4px;
-    background-color: #2f485811;
+    background-color: #00ff4ca6;
 }

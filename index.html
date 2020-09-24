@@ -17,8 +17,9 @@
         </div>
         <div class="add_task">
             <div class="add_task__input">
-                <input type="text" v-model="new_task.title" placeholder="Введите задачу">
-                <textarea v-model="new_task.desc" placeholder="Описание задачи"></textarea>
+                <input type="text" v-model="new_task.title" placeholder="Введите задачу" @keyup.enter="add_task">
+                <textarea v-model="new_task.desc" placeholder="Описание задачи (новая строка: shift + enter)"
+                    @keyup.enter="add_task"></textarea>
             </div>
             <button @click="add_task()" class="add_task__btn"><i class="far fa-plus-square"></i></button>
         </div>
