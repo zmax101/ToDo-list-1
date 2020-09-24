@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
     transition: all 0.3s;
+    outline: none;
 }
 
 .main {
@@ -14,7 +15,8 @@
     box-shadow: 0 3px 20px #00000023;
     font-family: 'Gilroy', sans-serif;
     padding: 10px;
-    margin: 20px 0 0 20px;
+    margin: 0 auto;
+    margin-top: 20px;
     color: var(--main);
 }
 
@@ -83,6 +85,7 @@ textarea {
     font-family: 'Gilroy', sans-serif;
     border: 2px solid #2f485811;
     border-radius: 4px;
+    resize: none;
 }
 
 .add_task__input input {
@@ -94,6 +97,7 @@ textarea {
     border: none;
     margin-left: 20px;
     background-color: unset;
+    font-size: 30px;
 }
 
 .add_task__btn:hover {
